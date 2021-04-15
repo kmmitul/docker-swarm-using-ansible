@@ -11,4 +11,4 @@ Here I have deployed two containers namely "Wildlfy" and "Postgres" in a Docker 
 - ansible.cfg --> Ansible Configuration file 
 - inventory --> Ansible Inventory file
 
-The Wildfly image is a custom image also created by me. Please check  https://github.com/kmmitul/Custom-Wildfly-Image
+The Wildfly image used in this project, is a custom image also created by me. Please check  https://github.com/kmmitul/Custom-Wildfly-Image
