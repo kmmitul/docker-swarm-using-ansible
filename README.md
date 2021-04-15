@@ -6,7 +6,9 @@ Here I have deployed two containers namely "Wildlfy" and "Postgres" inside of my
 - Add_Nodes.yml ---> Add my worker node with the master node.
 - Run_Containers_In_Cluster.yml ---> Run my containers with replicas and healthcheck
 - portainer.yml ---> Deploy Portainer stack on master node to have a nice container management GUI
-
-The "main.yml" calls all the other yml file in order to complete the whole process. All the credentials like become passowrd or Postgress UID and password are saved in Ansible vault "Secret".
+- main.yml --> calls all other Ansible playbook files in a orderly manner to complete the whole process.
+- secret.yml ---> All the credentials like become passowrd or Postgress UID and password are saved in this Ansible vault.
+- ansible.cfg --> Ansible Configuration file 
+- inventory --> Ansible Inventory file
 
 The Wildfly image is custom image also created by me. Please check  https://github.com/kmmitul/Custom-Wildfly-Image
