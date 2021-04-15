@@ -1,5 +1,5 @@
 # docker-swarm-using-ansible
-Here I have deployed two containers namely "Wildlfy" and "Postgres" inside of my Docker Swarm cluster running on my target machines using Ansible playbook. 
+Here I have deployed two containers namely "Wildlfy" and "Postgres" in a Docker Swarm cluster running on my target machines using Ansible playbook. 
 
 - Install_Docker.yml ---> Preapre the Docker Environment on the nodes of my cluster.
 - Initialize_Cluster.yml --> Prepare my master node to initialiye the cluster.
@@ -11,4 +11,4 @@ Here I have deployed two containers namely "Wildlfy" and "Postgres" inside of my
 - ansible.cfg --> Ansible Configuration file 
 - inventory --> Ansible Inventory file
 
-The Wildfly image is custom image also created by me. Please check  https://github.com/kmmitul/Custom-Wildfly-Image
+The Wildfly image is a custom image also created by me. Please check  https://github.com/kmmitul/Custom-Wildfly-Image
