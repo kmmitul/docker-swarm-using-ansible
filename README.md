@@ -1,4 +1,4 @@
-# docker-swarm-using-ansible
+# Deploying Docker Swarm using Ansible
 Here I have deployed two containers namely "Wildlfy" and "Postgres" in a Docker Swarm cluster running on my target machines using Ansible playbook. 
 
 - main.yml --> calls all other Ansible playbook files in a orderly manner to complete the whole process.
