@@ -1,8 +1,7 @@
 # Deploying Docker Swarm using Ansible
 Here I have deployed two containers namely "Wildlfy" and "Postgres" in a Docker Swarm cluster running on my target machines using Ansible playbook. 
 
-![image](https://user-images.githubusercontent.com/59294204/114857187-445f4580-9de8-11eb-8a5b-77e303a72e0b.png)
-
+![image](https://user-images.githubusercontent.com/59294204/114857346-71135d00-9de8-11eb-93db-c006dce467e8.png)
 
 - main.yml --> calls all other Ansible playbook files in a orderly manner to complete the whole process.
 - Install_Docker.yml ---> Preapre the Docker Environment on the nodes or target machines.
