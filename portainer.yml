@@ -1,0 +1,15 @@
+---
+- hosts: Master
+  become: true
+  become_method: sudo
+  vars_files:
+   - secret.yml
+   
+  tasks:    
+
+    - name: Install portainer 
+      docker_stack:
+        state: present
+        name: Portainer
+        compose:
+          - portainer-agent-stack.yml 
