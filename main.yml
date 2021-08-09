@@ -5,3 +5,4 @@
 - import_playbook: Add_Nodes.yml
 - import_playbook: Run_Containers_In_Cluster.yml
 - import_playbook: Swirl.yml
+- import_playbook: Prometheus_all.yml
