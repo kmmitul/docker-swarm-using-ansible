@@ -3,12 +3,13 @@ Here I have deployed two containers namely "Wildlfy" and "Postgres" in a Docker 
 
 ![image](https://user-images.githubusercontent.com/59294204/114857346-71135d00-9de8-11eb-93db-c006dce467e8.png)
 
-- main.yml --> calls all other Ansible playbook files in a orderly manner to complete the whole process.
+- main.yml --> Calls all other Ansible playbook files in a orderly manner to complete the whole process.
 - Install_Docker.yml ---> Preapre the Docker Environment on the nodes or target machines.
 - Initialize_Cluster.yml --> Prepare my Master node to initialize the cluster.
 - Add_Nodes.yml ---> Add my Worker node with the Master node.
-- Run_Containers_In_Cluster.yml ---> Run my containers with replicas and healthcheck
-- portainer.yml ---> Deploy Portainer stack on master node to have a nice container management GUI
+- Run_Containers_In_Cluster.yml ---> Run my Wildfly containers with replicas and healthcheck
+- Swirl.yml ---> Deploy Swirl to have a nice container management GUI
+- Prometheus_all.yml ---> Deploy Prometheus along with cAdvisor to integrate with Swirl for visualing contnaienr metrics using my custom Prometheus image
 - secret.yml ---> All the credentials like become passowrd or Postgress UID and password are saved in this Ansible vault.
 - ansible.cfg --> Ansible Configuration file 
 - inventory --> Ansible Inventory file
